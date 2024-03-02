@@ -52,11 +52,11 @@ export const Toolbar = ({
           icon={Type}
           onCLick={()=> setCanvasState({ 
             mode: CanvasMode.Inserting,
-            layerType: LayerType.Text
+            LayerType: LayerType.Text
           })}
           isActive={
             canvasState.mode === CanvasMode.Inserting &&
-            canvasState.layerType === LayerType.Text
+            canvasState.LayerType === LayerType.Text
           }
         />
         <ToolButton 
@@ -64,11 +64,11 @@ export const Toolbar = ({
           icon={StickyNote}
           onCLick={() => setCanvasState({
             mode: CanvasMode.Inserting,
-            layerType: LayerType.Note
+            LayerType: LayerType.Note
           })}
           isActive={
             canvasState.mode === CanvasMode.Inserting &&
-            canvasState.layerType === LayerType.Note
+            canvasState.LayerType === LayerType.Note
           }
         />
         <ToolButton 
@@ -76,11 +76,11 @@ export const Toolbar = ({
           icon={Square}
           onCLick={() => setCanvasState({
             mode: CanvasMode.Inserting,
-            layerType: LayerType.Rectangle
+            LayerType: LayerType.Rectangle
           })}
           isActive={
             canvasState.mode === CanvasMode.Inserting &&
-            canvasState.layerType === LayerType.Rectangle
+            canvasState.LayerType === LayerType.Rectangle
           }
         />
         <ToolButton 
@@ -88,11 +88,11 @@ export const Toolbar = ({
           icon={Circle}
           onCLick={() => setCanvasState({
             mode: CanvasMode.Inserting,
-            layerType: LayerType.Ellipse
+            LayerType: LayerType.Ellipse
           })}
           isActive={
             canvasState.mode === CanvasMode.Inserting &&
-            canvasState.layerType === LayerType.Ellipse
+            canvasState.LayerType === LayerType.Ellipse
           }
         />
         <ToolButton 
